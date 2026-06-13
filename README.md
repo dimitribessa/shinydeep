@@ -38,3 +38,14 @@ if (!requireNamespace("devtools", quietly = TRUE)) {
 # Install myShinyApp directly from GitHub
 devtools::install_github("dimitribessa/shinydeep")
 ```
+
+### How to run the app
+
+```r
+# register the API serial key
+Sys.setenv(DEEPSEEK_API_KEY = "YOUR API KEY")  # R
+
+#' run the app
+library('shinydeep')
+run_app()
+```
